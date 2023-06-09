@@ -54,6 +54,18 @@ class InterfaceImp : MyInterface {
 }
 
 
+abstract class Shape{
+    abstract fun find()
+
+
+}
+class Square : Shape(){
+    override fun find() {
+        println("This is square")
+    }
+}
+
+
 
 fun main() {
     val c1 = Car()
@@ -92,6 +104,11 @@ fun main() {
 
     print("Calling and printing foo(): ")
     println(obj.foo())
+
+
+    //abstract
+    val obj3 = Square()
+    obj3.find()
 
 
 
